@@ -38,6 +38,8 @@ func! s:FTrobot()
     endif
 endfunc
 
+au Filetype robot setlocal commentstring=#%s
+
 "------------------------------------------------------------------------
 let &cpo=s:cpo_save
 " vim700: set fdm=marker:
